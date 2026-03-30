@@ -17,7 +17,7 @@ public class TwilioConifig {
 	private String authToken;
 	@PostConstruct
 	public void init() {
-		Twilio.init(authToken, accountSid);
+		Twilio.init( accountSid,authToken);
 	}
 
 }
