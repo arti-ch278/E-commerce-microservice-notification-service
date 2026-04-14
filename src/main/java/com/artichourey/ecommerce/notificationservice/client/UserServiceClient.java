@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.artichourey.ecommerce.notificationservice.dto.UserResponseDto;
 
-@FeignClient(name = "user-service", url = "http://localhost:8086")
+@FeignClient(name = "user-service")
 public interface UserServiceClient {
 
     // Call the public endpoint (no auth required)
